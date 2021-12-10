@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../estilos/estilosformulario.css" />
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header class="header">
+        <div class="conteiner">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./curriculum.html">Curriculum</a></li>
+                    <li><a href="./sobreproyecto.html">Sobre el proyecto</a></li>
+                    <li><a href="./formulario.html">Formulario</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Cuerpo-->
+    <main class="main">
+        <div>
+            <section class="formulario">
+                <h1>Formulario</h1>
+                <form>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Escriba su nombre..." /><br />
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" id="Apellido" name="Apellido"
+                        placeholder="Escriba su primer apellido..." /><br />
+                    <input type="radio" id="Hombre" name="sexo" value="Hombre" />
+                    <label for="Hombre">Hombre</label><br />
+                    <input type="radio" id="Mujer" name="sexo" value="Mujer" />
+                    <label for="Mujer">Mujer</label><br />
+                    Permisos de conducir necesarios (no rellenar si no es necesario):<br />
+                    <input type="checkbox" id="transporte1" name="transporte1" value="coche" />
+                    <label for="transporte1">Coche</label>
+                    <input type="checkbox" id="transporte2" name="trasnporte2" value="moto" />
+                    <label for="transporte2">Moto</label><br />
+                    Indique experiencia requerida (Baja, Media, Alta)
+                    <input type="range" name="rango" min="1" max="3" list="listaRango" /><br />
+                    Indique horario
+                    <select name="menu">
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select><br />
+                    <label for="Fecha">Fecha de cita</label>
+                    <input type="date" id="Fecha" name="Fecha" /><br />
+                    <label for="Hora">Hora de cita</label>
+                    <input type="time" id="Hora" name="Hora" /><br />
+                    <label for="correo">Dirección de correo</label>
+                    <input type="email" name="correo" size="30" placeholder="ejemplo@gmail.com" /><br />
+                    <textarea name="texto" cols="30" rows="10" placeholder="Comentarios..."></textarea><br />
+                    <input type="submit" value="Enviar" />
+                    <input type="reset" value="Borrar" />
+                </form>
+            </section>
+        </div>
+    </main>
+    <!--Pie de página-->
+    <footer>
+        <div class="footer">
+            <div class="container">Contactar: adrian.ante.alcalde@gmail.com</div>
+            <div class="container">Redes: <a href="https://www.instagram.com/adrii_ante98/">Instagram </a><a
+                    href="https://twitter.com/TheiMiNex">Twitter </a></div>
+            <div class="container">Ultima modificación: Día 8 de Diciembre del 2021</div>
+        </div>
+    </footer>
+</body>
+
+</html>
